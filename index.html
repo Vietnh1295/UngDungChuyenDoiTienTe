@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="P">
+    <fieldset>
+        <legend>Ứng dụng chuyển đổi tiền tệ</legend>
+        Amount
+        <input type="text" name="Amount" value="0" id="Amount">
+        From Currency
+        <select name="From_Currency" id="From_Currency">
+        <option value="VietNam">Việt Nam</option>
+        <option value="USD">Mỹ</option>
+        <option value="JP">Japan</option>
+        </select>
+        To Currency
+        <select name="To_Currency" id ="To_Currency">
+            <option value="VietNam">Việt Nam</option>
+            <option value="USD">Mỹ</option>
+            <option value="JP">Japan</option>
+        </select>
+        <input type="button" value="Convert" onclick="Chuyendoi(GetVauleAmount(),GetVauleFrom_Currency(),GetVauleTo_Currency());"><br>
+        Result  <div id="Result"></div>
+    </fieldset>
+</form>
+<script src="myscript.js"></script>
+</body>
+</html>
